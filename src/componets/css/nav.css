@@ -1,0 +1,38 @@
+aside{
+    height: 100vh;
+    width: 240px;
+    padding: 15px 22px;
+    background-color: var(--backgroundNav);
+}
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    gap: 14.5px;
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fontTertiary);
+    font-size: 12.5px;
+
+    transition: .5s;
+}
+a:hover{
+    color: var(--fontSecondary);
+}
+.iconNavBar{
+    margin-right: 15px;
+    width: 26px;
+    height: 26px;
+}
+.linkActive{
+    color: var(--fontSecondary);
+}
+
+.line{
+    margin: 20px 0;
+    width: 100%;
+    border-top: 1px solid #282828;
+}
