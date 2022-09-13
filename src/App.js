@@ -6,6 +6,8 @@ import Home from "./componets/Home";
 import Search from "./componets/Search";
 import Library from "./componets/Library";
 
+import BarMusic from "./componets/BarMusic";
+
 export default function App() {
 
   const [page, setPage] = useState('home')
@@ -31,6 +33,8 @@ export default function App() {
           <Route path='/musicliked' element={ <h1>músicas curtidas</h1> } />
           <Route path='*' element={ <h1>Error[401]: page don't found</h1>  } />
         </Routes>
+
+        <BarMusic />
 
       </div>
     </Router>

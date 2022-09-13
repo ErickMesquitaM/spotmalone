@@ -8,6 +8,7 @@ export default function Home(props){
         'Beerbongs & Bentleys',
         'Stoney',
         'Twelve Carat Toothache',
+        'This Is Post Malone',
         'Motley Crew'
     ]
 
@@ -19,10 +20,10 @@ export default function Home(props){
             title: 'Stoney',
             desc: 'Post Malone'
         }, {
-            title: 'Twelve Carat Toothache',
+            title: 'Top 50 Global',
             desc: 'Post Malone'
         }, {
-            title: 'Beerbongs & Bentleys',
+            title: 'Top Gaming Tracks',
             desc: 'Post Malone'
         }, {
             title: 'Motley Crew',

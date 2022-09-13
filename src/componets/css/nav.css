@@ -3,6 +3,9 @@ aside{
     width: 240px;
     padding: 15px 22px;
     background-color: var(--backgroundNav);
+    position: fixed;
+    left: 0;
+    z-index: 1;
 }
 
 .navBar{

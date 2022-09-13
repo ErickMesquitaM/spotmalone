@@ -14,6 +14,9 @@
     --fontGreen: #1a9a47;
     --iconsGreen: #1db954;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 *{
     padding: 0;
     margin: 0;
@@ -24,6 +27,7 @@
     display: flex;
     background-color: #121212;
     color: var(--fontTertiary);
+    padding-left: 240px;
 }
 ul{
     list-style: none;

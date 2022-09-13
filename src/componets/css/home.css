@@ -5,14 +5,14 @@
     position: relative;
 }
 .topHome{
-    width: calc(100vw - 240px);
+    width: 100%;
     padding: 15px 50px;
     background-color: #561613;
     display: flex;
     justify-content: flex-end;
     position: fixed;
     top: 0;
-    left: 240px;
+    left: 0;
 }
 .user{
     background-color: rgba(0, 0, 0, 0.9);
@@ -49,9 +49,12 @@
 }
 .itemLastPlayed:hover{
     background-color: rgba(255, 255, 255, 0.25); 
+    transition: .2s;    
 }
 
 .playAlbum{
+    width: 48px;
+    height: 48px;
     background-color: #1ed760;
     border-radius: 50%;
     border: none;
@@ -69,9 +72,16 @@
 }
 .itemLastPlayed:hover > .playAlbum{
     opacity: 100%;
-    transition: .2s;    
 }
-
+.playAlbum:hover{
+    width: 50px;
+    height: 50px;
+    right: 6px;
+    box-shadow: 0 0 5px #1ed75f43;
+}
+.imgBtnPlayAlbum{
+    width: 100%;
+}
 .imgAlbum{
     width: 80px;
     height: 80px;
@@ -90,7 +100,7 @@
 }
 
 .recomendadeList{
-    margin: 25px 30px;
+    margin: 25px 30px 100px 30px;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
     gap: 25px;
