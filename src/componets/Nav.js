@@ -8,27 +8,27 @@ export default function Nav(){
       <nav className="navBar">
         <img src="./assets/icons/options.png" alt="" className="iconNavBar" />
 
-        <Link to="/" className="linkActive">
-            <img src="./assets/icons/home.png" alt="" className="iconNavBar" />
+        <Link to="/" id="home">
+            <img src="./assets/icons/home.png" alt="" className="iconNavBar" id="homeImg" />
             Início
         </Link> 
 
-        <Link to="/">
-            <img src="./assets/icons/search.png" alt="" className="iconNavBar" />
+        <Link to="/search" id="search">
+            <img src="./assets/icons/search.png" alt="" className="iconNavBar" id="searchImg" />
             Buscar
         </Link> 
 
-        <Link to="/">
-            <img src="./assets/icons/library.png" alt="" className="iconNavBar" />
+        <Link to="/library" id="library">
+            <img src="./assets/icons/library.png" alt="" className="iconNavBar" id="libraryImg" />
             Sua Biblioteca
         </Link> 
 
-        <Link to="/">
+        <Link to="/aege">
             <img src="./assets/icons/newPlaylist.png" alt="" className="iconNavBar" />
             Criar playlist
         </Link> 
 
-        <Link to="/">
+        <Link to="/musicliked">
             <img src="./assets/icons/songsLoved.png" alt="" className="iconNavBar" />
             Músicas Curtidas
         </Link> 

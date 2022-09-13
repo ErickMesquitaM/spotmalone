@@ -1,0 +1,125 @@
+
+.pageHome{
+    width: calc(100vw - 240px);
+    color: var(--fontPrimary);
+    position: relative;
+}
+.topHome{
+    width: calc(100vw - 240px);
+    padding: 15px 50px;
+    background-color: #561613;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 240px;
+}
+.user{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.imgUser{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.lastPlayed{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 15px 25px;
+    margin: 25px 0;
+}
+.itemLastPlayed{
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+}
+.itemLastPlayed:hover{
+    background-color: rgba(255, 255, 255, 0.25); 
+}
+
+.playAlbum{
+    background-color: #1ed760;
+    border-radius: 50%;
+    border: none;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    opacity: 0%;
+    cursor: pointer;
+}
+.itemLastPlayed:hover > .playAlbum{
+    opacity: 100%;
+    transition: .2s;    
+}
+
+.imgAlbum{
+    width: 80px;
+    height: 80px;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bg-gradient{
+    background-image: linear-gradient(to bottom, #561613, #121212);
+    padding: 25px 30px 5px 30px;
+    margin-top: 59px;
+}
+
+.recomendade{
+    font-size: 22px;
+    margin: 10px 30px;
+}
+
+.recomendadeList{
+    margin: 25px 30px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+.itemRecomendadeList{
+    border-radius: 7px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 100%;
+    transition: .5s;
+}
+.itemRecomendadeList:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.imgRecomendade{
+    width: 100%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.titleRecomendade{
+    margin: 13px 0;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--fontPrimary);
+    white-space: nowrap;
+}
+
+.descRecomendade{
+    font-size: 13px;
+    color: var(--fontTertiary);
+}
